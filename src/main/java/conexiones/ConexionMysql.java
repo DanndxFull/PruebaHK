@@ -21,13 +21,13 @@ public class ConexionMysql {
     public static ConexionMysql instance;//Singleton
     private Connection cnn;
     
-    private String url = "jdbc:mysql://localhost:3306/bd_tallerjavaweb?zeroDateTimeBehavior=CONVERT_TO_NULL";
-    private String user = "root";
-    private String password = "";
+    private String url = "jdbc:postgresql://ec2-34-205-14-168.compute-1.amazonaws.com:5432/dbkfet9l0e3top?sslmode=require";
+    private String user = "malqoycdayuetc";
+    private String password = "46840f1341b8f8ee3a3d857fdd6bb3168eba1e68dcad2235dcdfc992241518d9";
     
     private ConexionMysql(){
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
             cnn = DriverManager.getConnection(url, user, password);
         } catch (ClassNotFoundException | SQLException ex) {
             System.out.println("Error1 "+ex.getMessage());
