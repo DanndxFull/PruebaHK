@@ -1,0 +1,9 @@
+modelo\dao\Contrato.class
+modelo\dao\UsuarioDAO.class
+modelo\dto\ProductoDTO.class
+modelo\dao\ProductoDAO.class
+modelo\dto\UsuarioDTO.class
+pruebas\TextPruebas.class
+conexiones\ConexionMysql.class
+control\ProductoCTO.class
+control\Facade.class
